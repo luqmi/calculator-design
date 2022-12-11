@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="container">
+    <script>
+
+
+
+        var sk = document.getElementById("container");
+        sk.style.padding = "0px"
+        sk.style.margin = "0px"
+       
+        
+
+
+// ============================ for parent div ==============================
+        var d = document.createElement("div");
+        d.style.backgroundColor = "#FFE9A0";
+        d.style.display = "flex"
+        d.style.justifyContent ="center"
+        d.style.alignItems ="center"
+        d.style.width = "100%"
+        d.style.height = "100vh"
+        document.body.append(d);
+
+
+// ============================ for child div ==============================
+
+        var d1 = document.createElement("div");
+        d1.style.backgroundColor = "black";
+        d1.style.color = "white"
+        d1.style.width = "30%"
+        d1.style.height = "97vh"
+        // d1.style.marginTop = "50px";
+        // d1.style.height = "80vh"
+        // d1.style.border = "1px solid red"
+        d1.style.borderRadius = "10px"
+        d1.style.fontSize = "20px"
+        d1.style.color = " #FD841F"
+        d1.innerHTML = "<h3>Conio ~<h3/>"
+        d1.style.textAlign = "center"        
+        d.append(d1);
+
+
+
+// ============================ for child of child div ==========================
+
+var d2 = document.createElement("div");
+        d2.style.display = "flex"
+        d2.style.justifyContent =  "center"
+        d2.style.alignItems = "end"
+        d2.style.backgroundColor = "white";
+        d2.style.color = "black"
+        d2.style.width = "85%"
+        // d2.style.textAlign = "center"        
+        d2.style.margin = "auto";
+        d2.style.height = "30vh"
+        // d2.style.border = "1px solid yellow"
+        d1.append(d2);        
+
+        //============ from here i create buttons ===============
+
+// // ============================  for main div of four btns ====================
+var mn = document.createElement("div");
+// mn.style.backgroundColor = "tomato"
+mn.style.display = "flex"
+
+mn.style.width = "85%"
+mn.style.margin = "auto"
+mn.style.height = "8vh"
+mn.style.marginTop = "10px"
+d1.append(mn);
+
+
+
+
+// // ============================ 1_div for  1_btn ============================
+        var d3 = document.createElement("div");
+        // d3.style.backgroundColor = "green";
+        d3.style.color = "white"
+        d3.style.width = "15%"
+        d3.style.margin = "auto";
+        d3.style.height = "6vh"
+        d3.style.marginTop = "10px"
+        // d3.style.border = "1px solid purple"
+        mn.append(d3); 
+
+
+// // ============================ 1_btn  ==============================
+
+var btn = document.createElement("button");
+btn.style.display = "block"
+btn.style.width = "50px"
+btn.style.margin = "auto";
+btn.style.height = "40px"
+btn.style.borderRadius = "50px"
+btn.style.fontSize = "20px"
+btn.style.fontWeight = "bold"
+btn.innerHTML = "1"
+btn.style.backgroundColor = "white"
+d3.append(btn);
+
+
+
+
+// // ============================ 2_div for 2_btn ========================
+var d4 = document.createElement("div");
+// d4.style.backgroundColor = "green";
+d4.style.color = "white"
+d4.style.width = "15%"
+d4.style.margin = "auto";
+d4.style.height = "6vh"
+d4.style.marginTop = "10px"
+// d4.style.border = "1px solid purple"
+mn.append(d4); 
+
+// // ============================ 2_btn ==============================
+
+var btn1 = document.createElement("button");
+btn1.style.display = "block"
+btn1.style.width = "50px"
+btn1.style.margin = "auto";
+btn1.style.height = "40px"
+btn1.style.borderRadius = "50px"
+btn1.style.fontSize = " 20px"
+btn1.style.fontWeight = "bold"
+btn1.innerHTML = "2"
+btn1.style.backgroundColor = "white"
+d4.append(btn1);
+
+
+// // ============================ 3_div for 3_btn  ========================
+var d5 = document.createElement("div");
+// d5.style.backgroundColor = "green";
+d5.style.color = "white"
+d5.style.width = "15%"
+d5.style.margin = "auto";
+d5.style.height = "6vh"
+d5.style.marginTop = "10px"
+// d5.style.border = "1px solid purple"
+mn.append(d5); 
+
+// ============================ 3_btn ==============================
+var btn2 = document.createElement("button");
+btn2.style.display = "block"
+btn2.style.width = "50px"
+btn2.style.margin = "auto";
+btn2.style.height = "40px"
+btn2.style.borderRadius = "50px"
+btn2.style.fontSize = "20px"
+btn2.style.fontWeight = "bold"
+btn2.innerHTML = "3"
+btn2.style.backgroundColor = "white"
+d5.append(btn2);
+
+
+
+// // ============================  4_div for 4_btn ========================
+var d6 = document.createElement("div");
+// d6.style.backgroundColor = "green";
+d6.style.color = "white"
+d6.style.width = "15%"
+d6.style.margin = "auto";
+d6.style.height = "6vh"
+d6.style.marginTop = "10px"
+// d6.style.border = "1px solid purple"
+mn.append(d6); 
+
+
+
+// ============================ for button3 ==============================
+
+var btn3 = document.createElement("button");
+btn3.style.display = "block"
+btn3.style.width = "50px"
+btn3.style.margin = "auto";
+btn3.style.height = "40px"
+btn3.style.borderRadius = "50px"
+btn3.style.fontSize = "20px"
+btn3.style.fontWeight = "bold"
+btn3.innerHTML = "÷"
+btn3.style.color = "white"
+btn3.style.backgroundColor = "#FD841F"
+d6.append(btn3);
+
+
+
+//========================== for second line use another div ==============
+
+var mn_1 = document.createElement("div");
+// mn_1.style.backgroundColor = "tomato"
+mn_1.style.display = "flex"
+mn_1.style.width = "85%"
+mn_1.style.margin = "auto"
+mn_1.style.height = "8vh"
+mn_1.style.marginTop = "10px"
+d1.append(mn_1);
+
+// // ============================ 1_div for  1_btn ============================
+var d7 = document.createElement("div");
+// d7.style.backgroundColor = "green";
+d7.style.color = "white"
+d7.style.width = "15%"
+d7.style.margin = "auto";
+d7.style.height = "6vh"
+d7.style.marginTop = "10px"
+// d7.style.border = "1px solid purple"
+mn_1.append(d7); 
+
+
+// // ============================ 1_btn  ==============================
+
+var btn_7 = document.createElement("button");
+btn_7.style.display = "block"
+btn_7.style.width = "50px"
+btn_7.style.margin = "auto";
+btn_7.style.height = "40px"
+btn_7.style.borderRadius = "50px"
+btn_7.style.fontSize = "20px"
+btn_7.style.fontWeight = "bold"
+btn_7.innerHTML = "5"
+btn_7.style.backgroundColor = "white"
+d7.append(btn_7);
+
+
+
+// // ============================ 2_div for  2_btn ============================
+var d8 = document.createElement("div");
+// d8.style.backgroundColor = "green";
+d8.style.color = "white"
+d8.style.width = "15%"
+d8.style.margin = "auto";
+d8.style.height = "6vh"
+d8.style.marginTop = "10px"
+// d8.style.border = "1px solid purple"
+mn_1.append(d8); 
+
+
+// // ============================ 2_btn  ==============================
+
+var btn_8 = document.createElement("button");
+btn_8.style.display = "block"
+btn_8.style.width = "50px"
+btn_8.style.margin = "auto";
+btn_8.style.height = "40px"
+btn_8.style.borderRadius = "50px"
+btn_8.style.fontSize = "20px"
+btn_8.style.fontWeight ="bold"
+btn_8.innerHTML = "6"
+btn_8.style.backgroundColor = "white"
+d8.append(btn_8);
+
+
+
+
+// // ============================ 3_div for  3_btn ============================
+var d9 = document.createElement("div");
+// d9.style.backgroundColor = "green";
+d9.style.color = "white"
+d9.style.width = "15%"
+d9.style.margin = "auto";
+d9.style.height = "6vh"
+d9.style.marginTop = "10px"
+// d9.style.border = "1px solid purple"
+mn_1.append(d9); 
+
+
+// // ============================ 3_btn  ==============================
+
+var btn_9 = document.createElement("button");
+btn_9.style.display = "block"
+btn_9.style.width = "50px"
+btn_9.style.margin = "auto";
+btn_9.style.height = "40px"
+btn_9.style.borderRadius = "50px"
+btn_9.style.fontSize = "20px"
+btn_9.style.fontWeight = "bold"
+btn_9.innerHTML = "7"
+btn_9.style.backgroundColor = "white"
+d9.append(btn_9);
+
+
+
+
+// // ============================ 4_div for  4_btn ============================
+var d10 = document.createElement("div");
+// d10.style.backgroundColor = "green";
+d10.style.color = "white"
+d10.style.width = "15%"
+d10.style.margin = "auto";
+d10.style.height = "6vh"
+d10.style.marginTop = "10px"
+// d10.style.border = "1px solid purple"
+mn_1.append(d10); 
+
+
+// // ============================ 4_btn  ==============================
+
+var btn_10 = document.createElement("button");
+btn_10.style.display = "block"
+btn_10.style.width = "50px"
+btn_10.style.margin = "auto";
+btn_10.style.height = "40px"
+btn_10.style.borderRadius = "50px"
+btn_10.style.fontSize = "20px"
+btn_10.style.fontWeight = "bold"
+btn_10.innerHTML = "x"
+btn_10.style.color = "white"
+btn_10.style.backgroundColor = "#FD841F"
+d10.append(btn_10);
+
+
+
+//========================== for third line use another div ==============
+
+var mn_2 = document.createElement("div");
+// mn_2.style.backgroundColor = "tomato"
+mn_2.style.display = "flex"
+mn_2.style.width = "85%"
+mn_2.style.margin = "auto"
+mn_2.style.height = "8vh"
+mn_2.style.marginTop = "10px"
+d1.append(mn_2);
+
+
+// // ============================ 1_div for  1_btn ============================
+var d11 = document.createElement("div");
+// d11.style.backgroundColor = "green";
+d11.style.color = "white"
+d11.style.width = "15%"
+d11.style.margin = "auto";
+d11.style.height = "6vh"
+d11.style.marginTop = "10px"
+// d11.style.border = "1px solid purple"
+mn_2.append(d11); 
+
+
+// // ============================ 1_btn  ==============================
+
+var btn_11 = document.createElement("button");
+btn_11.style.display = "block"
+btn_11.style.width = "50px"
+btn_11.style.margin = "auto";
+btn_11.style.height = "40px"
+btn_11.style.borderRadius = "50px"
+btn_11.style.fontSize = "20px"
+btn_11.style.fontWeight = "bold"
+btn_11.innerHTML = "6"
+btn_11.style.backgroundColor = "white"
+d11.append(btn_11);
+
+
+// // ============================ 2_div for  2_btn ============================
+var d12 = document.createElement("div");
+// d12.style.backgroundColor = "green";
+d12.style.color = "white"
+d12.style.width = "15%"
+d12.style.margin = "auto";
+d12.style.height = "6vh"
+d12.style.marginTop = "10px"
+// d12.style.border = "1px solid purple"
+mn_2.append(d12); 
+
+
+// // ============================ 2_btn  ==============================
+
+var btn_12 = document.createElement("button");
+btn_12.style.display = "block"
+btn_12.style.width = "50px"
+btn_12.style.margin = "auto";
+btn_12.style.height = "40px"
+btn_12.style.borderRadius = "50px"
+btn_12.style.fontSize = "20px"
+btn_12.style.fontWeight = "bold"
+btn_12.innerHTML = "5"
+btn_12.style.backgroundColor = "white"
+d12.append(btn_12);
+
+
+// // ============================ 3_div for  3_btn ============================
+var d13 = document.createElement("div");
+// d13.style.backgroundColor = "green";
+d13.style.color = "white"
+d13.style.width = "15%"
+d13.style.margin = "auto";
+d13.style.height = "6vh"
+d13.style.marginTop = "10px"
+// d13.style.border = "1px solid purple"
+mn_2.append(d13); 
+
+
+// // ============================ 3_btn  ==============================
+
+var btn_13 = document.createElement("button");
+btn_13.style.display = "block"
+btn_13.style.width = "50px"
+btn_13.style.margin = "auto";
+btn_13.style.height = "40px"
+btn_13.style.borderRadius = "50px"
+btn_13.style.fontSize = "20px"
+btn_13.style.fontWeight ="bold"
+btn_13.innerHTML = "4"
+btn_13.style.backgroundColor = "white"
+d13.append(btn_13);
+
+
+// // ============================ 4_div for  4_btn ============================
+var d14 = document.createElement("div");
+// d14.style.backgroundColor = "green";
+d14.style.color = "white"
+d14.style.width = "15%"
+d14.style.margin = "auto";
+d14.style.height = "6vh"
+d14.style.marginTop = "10px"
+// d14.style.border = "1px solid purple"
+mn_2.append(d14); 
+
+
+// // ============================ 4_btn  ==============================
+
+var btn_14 = document.createElement("button");
+btn_14.style.display = "block"
+btn_14.style.width = "50px"
+btn_14.style.margin = "auto";
+btn_14.style.height = "40px"
+btn_14.style.fontSize = "30px"
+btn_14.style.fontSize = "bold"
+btn_14.style.borderRadius = "50px"
+btn_14.innerHTML = "-"
+btn_14.style.color = "white"
+btn_14.style.backgroundColor = "#FD841F"
+d14.append(btn_14);
+
+
+//========================== for fourth line use another div ==============
+
+var mn_3 = document.createElement("div");
+// mn_3.style.backgroundColor = "tomato"
+mn_3.style.display = "flex"
+mn_3.style.width = "85%"
+mn_3.style.margin = "auto"
+mn_3.style.height = "8vh"
+mn_3.style.marginTop = "10px"
+d1.append(mn_3);
+
+// // ============================ 1_div for  1_btn ============================
+var d15 = document.createElement("div");
+// d15.style.backgroundColor = "green";
+d15.style.color = "white"
+d15.style.width = "15%"
+d15.style.margin = "auto";
+d15.style.height = "6vh"
+d15.style.marginTop = "10px"
+// d15.style.border = "1px solid purple"
+mn_3.append(d15); 
+
+
+// // ============================ 1_btn  ==============================
+
+var btn_15 = document.createElement("button");
+btn_15.style.display = "block"
+btn_15.style.width = "50px"
+btn_15.style.margin = "auto";
+btn_15.style.height = "40px"
+btn_15.style.fontSize = "20px"
+btn_15.style.fontWeight = "bold"
+btn_15.style.borderRadius = "50px"
+btn_15.innerHTML = "1"
+btn_15.style.backgroundColor = "white"
+d15.append(btn_15);
+
+
+// // ============================ 2_div for  2_btn ============================
+var d16 = document.createElement("div");
+// d16.style.backgroundColor = "green";
+d16.style.color = "white"
+d16.style.width = "15%"
+d16.style.margin = "auto";
+d16.style.height = "6vh"
+d16.style.marginTop = "10px"
+// d16.style.border = "1px solid purple"
+mn_3.append(d16); 
+
+
+// // ============================ 2_btn  ==============================
+
+var btn_16 = document.createElement("button");
+btn_16.style.display = "block"
+btn_16.style.width = "50px"
+btn_16.style.margin = "auto";
+btn_16.style.height = "40px"
+btn_16.style.fontSize = "20px"
+btn_16.style.fontSize = "bold"
+btn_16.style.borderRadius = "50px"
+btn_16.innerHTML = "2"
+btn_16.style.backgroundColor = "white"
+d16.append(btn_16);
+
+// // ============================ 3_div for  3_btn ============================
+var d17 = document.createElement("div");
+// d17.style.backgroundColor = "green";
+d17.style.color = "white"
+d17.style.width = "15%"
+d17.style.margin = "auto";
+d17.style.height = "6vh"
+d17.style.marginTop = "10px"
+// d17.style.border = "1px solid purple"
+mn_3.append(d17); 
+
+
+// // ============================ 3_btn  ==============================
+
+var btn_17 = document.createElement("button");
+btn_17.style.display = "block"
+btn_17.style.width = "50px"
+btn_17.style.margin = "auto";
+btn_17.style.height = "40px"
+btn_17.style.fontSize = "20px"
+btn_17.style.fontWeight = "bold"
+btn_17.style.borderRadius = "50px"
+btn_17.innerHTML = "3"
+btn_17.style.backgroundColor = "white"
+d17.append(btn_17);
+
+
+// // ============================ 4_div for  4_btn ============================
+var d18 = document.createElement("div");
+// d18.style.backgroundColor = "green";
+d18.style.color = "white"
+d18.style.width = "15%"
+d18.style.margin = "auto";
+d18.style.height = "6vh"
+d18.style.marginTop = "10px"
+// d18.style.border = "1px solid purple"
+mn_3.append(d18); 
+
+
+// // ============================ 4_btn  ==============================
+
+var btn_18 = document.createElement("button");
+btn_18.style.display = "block"
+btn_18.style.width = "50px"
+btn_18.style.fontWeight = "bold"
+btn_18.style.fontSize = "25px"
+btn_18.style.margin = "auto";
+btn_18.style.height = "40px"
+btn_18.style.borderRadius = "50px"
+btn_18.innerHTML = "+"
+btn_18.style.color = "white"
+btn_18.style.backgroundColor = "#FD841F"
+d18.append(btn_18);
+
+
+//========================== for fifth line use another div ==============
+
+var mn_4 = document.createElement("div");
+// mn_4.style.backgroundColor = "tomato"
+mn_4.style.display = "flex"
+mn_4.style.width = "85%"
+mn_4.style.margin = "auto"
+mn_4.style.height = "8vh"
+mn_4.style.marginTop = "10px"
+d1.append(mn_4);
+
+
+
+// // ============================ 1_div for  1_btn ============================
+var d19 = document.createElement("div");
+// d19.style.backgroundColor = "green";
+d19.style.color = "white"
+d19.style.width = "40%"
+d19.style.margin = "auto";
+d19.style.height = "6vh"
+d19.style.marginTop = "10px"
+// d19.style.border = "1px solid purple"
+mn_4.append(d19); 
+
+
+// // ============================ 1_btn  ==============================
+
+var btn_19 = document.createElement("button");
+// btn_19.style.display = "block"
+btn_19.style.width = "150px"
+btn_19.style.display = "flex"
+btn_19.style.fontSize = "25px"
+// btn_19.style.margin = "auto";
+btn_19.style.height = "40px"
+btn_19.style.borderRadius = "50px"
+btn_19.innerHTML = "0"
+btn_19.style.backgroundColor = "white"
+d19.append(btn_19);
+
+
+// // ============================ 2_div  for  2_btn ============================
+var d20 = document.createElement("div");
+// d20.style.backgroundColor = "green";
+d20.style.color = "white"
+d20.style.width = "15%"
+d20.style.margin = "auto";
+d20.style.height = "6vh"
+d20.style.marginTop = "10px"
+// d20.style.border = "1px solid purple"
+mn_4.append(d20); 
+
+
+// // ============================ 2_btn  ==============================
+
+var btn_20 = document.createElement("button");
+// btn_20.style.display = "block"
+btn_20.style.width = "50px"
+// btn_20.style.margin = "auto";
+btn_20.style.display = "flex"
+btn_20.style.justifyContent = "center"
+btn_20.style.height = "40px"
+btn_20.style.borderRadius = "50px"
+btn_20.style.fontWeight = "bold"
+btn_20.style.fontSize = "20px"
+btn_20.innerHTML = "."
+btn_20.style.backgroundColor = "white"
+d20.append(btn_20);
+
+
+
+// // ============================ 3_div  for  3_btn ============================
+var d21 = document.createElement("div");
+// d21.style.backgroundColor = "green";
+d21.style.color = "white"
+d21.style.width = "15%"
+d21.style.margin = "auto";
+d21.style.height = "6vh"
+d21.style.marginTop = "10px"
+// d21.style.border = "1px solid purple"
+mn_4.append(d21); 
+
+
+// // ============================ 3_btn  ==============================
+
+var btn_21 = document.createElement("button");
+btn_21.style.display = "block"
+btn_21.style.width = "50px"
+btn_21.style.margin = "auto";
+btn_21.style.height = "40px"
+btn_21.style.fontSize = "25px"
+btn_21.style.borderRadius = "50px"
+btn_21.innerHTML = "="
+btn_21.style.color = "white"
+btn_21.style.backgroundColor = "#FD841F"
+d21.append(btn_21);
+    </script>
+</body>
+</html>
